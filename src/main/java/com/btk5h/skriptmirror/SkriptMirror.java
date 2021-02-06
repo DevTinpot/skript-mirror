@@ -24,7 +24,7 @@ public class SkriptMirror extends JavaPlugin {
     try {
       getAddonInstance().loadClasses("com.btk5h.skriptmirror.skript");
 
-      Path dataFolder = SkriptMirror.getInstance().getDataFolder().toPath();
+      Path dataFolder = SkriptMirror.getInstance().getDataFolder().toPath("test");
       LibraryLoader.loadLibraries(dataFolder);
 
       ParseOrderWorkarounds.reorderSyntax();
